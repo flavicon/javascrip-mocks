@@ -1,0 +1,14 @@
+{
+  "name": "javascript-mocks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/file.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/file.js",
+    "test": "node ./src/file.test.js"
+  },
+  "keywords": [],
+  "author": "Flávio Silva",
+  "license": "ISC"
+}

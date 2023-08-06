@@ -1,6 +1,6 @@
-const { readFile } = require("fs/promises");
-const { error } = require("./constants");
-const User = require("./user");
+import User from "./user.js";
+import { readFile } from "fs/promises";
+import { error } from './constants.js';
 
 const DEFAULT_OPTIONS = {
   maxLines: 3,
@@ -68,4 +68,4 @@ class File {
   }
 }
 
-module.exports = File;
+export default File;

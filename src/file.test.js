@@ -1,6 +1,6 @@
-const { rejects, deepStrictEqual } = require("assert");
-const { error } = require("./constants");
-const File = require("./file");
+import File from './file.js';
+import { rejects, deepStrictEqual } from "assert";
+import { error } from "./constants.js";
 
 (async () => {
   {
@@ -37,7 +37,7 @@ const File = require("./file");
         "profession": "Bancario",
         "age": 60
       }
-     ];
-     deepStrictEqual(JSON.stringify(result), JSON.stringify(expected));
+    ];
+    deepStrictEqual(JSON.stringify(result), JSON.stringify(expected));
   }
 })();
