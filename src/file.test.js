@@ -4,6 +4,12 @@ import { error } from "./constants.js";
 
 (async () => {
   {
+    const filePath = "./mocks/wrong-header-invalid.csv";
+    const rejection = new Error(error.FILE_FIELDS_ERROR_MESSAGE);
+    const result = File.csvToJson(filePath);
+    await rejects(result, rejection);
+  }
+  {
     const filePath = './mocks/empty-file-invalid.csv';
     const rejection = new Error(error.FILE_LENGTH_ERROR_MESSAGE);
     const result = File.csvToJson(filePath);
