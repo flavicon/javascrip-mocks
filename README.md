@@ -12,7 +12,7 @@ cd javascript-mocks
 
 como executar o projeto?
 
-> certifique-se de que o nodejs está instalado na sua máquina.
+> Certifique-se de que o nodejs está instalado na sua máquina.
 > [Baixar nodejs](https://nodejs.org/en/download)
 
 ```shell
